@@ -13,7 +13,7 @@ ImportarXML()
     ruta = InputBox("Introduce la ruta completa de la carpeta que contiene los archivos XML")
     
     'Establece el tipo de archivo
-    Set dat = New IdeaDataFile
+    Set dat = New IdeaDataFile 'THIS LINE COMES UP TO A COMPILATION ERROR: SYNTAX ERROR. Because of the text color of New, IDEA dont recognize that order.
     dat.SetType IDEADataTypeXML
     
     'Bucle que recorre todos los archivos XML de la carpeta y los agrega a la tabla
